@@ -6,18 +6,33 @@
 <head runat="server">
     <title></title>
     <style>
-          #foot{ 
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
+          #foot{  
+            color: aquamarine;
+            clear: both;
             background-color:rgb(31, 31, 82);
             text-align: center;
             font-size: 20px;
+            width: 100%;
+            padding: 15px;
+            font-weight: bold;
+            padding: 10px;
+            border-top: 2px solid #ffffff;
        }
+          #Content {
+            float: left;
+            background-color: aquamarine;
+            width: 100%;
+            min-height: 800px;
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-bottom: 5px;
+            margin-right: 0px;
+            border: 1px solid #ffffff;
+        }
+        
     </style>
 </head>
-<body>
+<body bgcolor ="#A2D8EA">
     <form id="form1" runat="server">
         
        <asp:Image ID="Image1" runat="server" Height="140px" ImageUrl="~/Image/tilte.jpg" Width="100%" />
@@ -38,18 +53,17 @@
             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
             <StaticSelectedStyle BackColor="#507CD1" />
         </asp:Menu>
+         <div id="Content">
+
+        </div>
 
         <div id ="foot">
-            <table>
-                    <tr>
-                        <td id="foot">
-                        <p>Họ và Tên: Lê Hữu Phước</p>
-                        <p>MSSV: 1551010103</p>
-                        <p>Sinh viên trường đại học Mở TP.HCM</p>
-                        </td>
-                    </tr>
-            </table>
+             Họ và Tên: Lê Hữu Phước</br>
+             MSSV: 1551010103</br>
+             Sinh viên trường đại học Mở TP.HCM
         </div>
+
+
     </form>
 
 </body>

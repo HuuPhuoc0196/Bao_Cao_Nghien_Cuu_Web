@@ -6,15 +6,30 @@
 <head runat="server">
     <title>Storing Advertisements in an XML File</title>
     <style>
-        #foot{ 
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
+         #foot{  
+            color: aquamarine;
+            clear: both;
             background-color:rgb(31, 31, 82);
             text-align: center;
             font-size: 20px;
+            width: 100%;
+            padding: 15px;
+            font-weight: bold;
+            padding: 10px;
+            border-top: 2px solid #ffffff;
        }
+          #Content {
+            float: left;
+            background-color: aquamarine;
+            width: 100%;
+            min-height: 800px;
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-bottom: 5px;
+            margin-right: 0px;
+            border: 1px solid #ffffff;
+        }
+        
     </style>
 </head>
 <body bgcolor = "#FF9999">
@@ -38,30 +53,25 @@
             <StaticSelectedStyle BackColor="#507CD1" />
         </asp:Menu>
 
+            <div id="Content">
 
-
-        &nbsp;<br />
-        <br />
-        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#000099" Text="Click vào hình hoặc vào link để chuyển"></asp:Label>
-        <br />
-        <br />
-        <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile.xml" Target ="_top" Height="200px" Width="300px" OnAdCreated="AdRotator1_AdCreated"/>
-        <br />
-        <br />
-        <asp:Label ID="Label2" runat="server" Text="Link..."></asp:Label>
-&nbsp;<asp:HyperLink ID="HyperLink1" runat="server">[HyperLink1]</asp:HyperLink>
-
+                        &nbsp;<br />
+                        <br />
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#000099" Text="Click vào hình hoặc vào link để chuyển"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile.xml" Target ="_top" Height="200px" Width="300px" OnAdCreated="AdRotator1_AdCreated"/>
+                        <br />
+                        <br />
+                        <asp:Label ID="Label2" runat="server" Text="Link..."></asp:Label>
+                &nbsp;<asp:HyperLink ID="HyperLink1" runat="server">[HyperLink1]</asp:HyperLink>
+                        <br /><br />
+            </div>
 
         <div id ="foot">
-            <table>
-                    <tr>
-                        <td id="foot">
-                        <p>Họ và Tên: Lê Hữu Phước</p>
-                        <p>MSSV: 1551010103</p>
-                        <p>Sinh viên trường đại học Mở TP.HCM</p>
-                        </td>
-                    </tr>
-            </table>
+             Họ và Tên: Lê Hữu Phước</br>
+             MSSV: 1551010103</br>
+             Sinh viên trường đại học Mở TP.HCM
         </div>
 
     </form>

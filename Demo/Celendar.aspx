@@ -6,15 +6,30 @@
 <head runat="server">
     <title> Celendar </title>
     <style>
-        #foot{ 
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
+         #foot{  
+            color: aquamarine;
+            clear: both;
             background-color:rgb(31, 31, 82);
             text-align: center;
             font-size: 20px;
+            width: 100%;
+            padding: 15px;
+            font-weight: bold;
+            padding: 10px;
+            border-top: 2px solid #ffffff;
        }
+          #Content {
+            float: left;
+            background-color: aquamarine;
+            width: 100%;
+            min-height: 800px;
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-bottom: 5px;
+            margin-right: 0px;
+            border: 1px solid #ffffff;
+        }
+        
     </style>
 </head>
 <body bgcolor = "#ff9933">
@@ -40,44 +55,38 @@
 
 
     <div aria-haspopup="False" lang="ace">
+    <div id="Content">
+                <br />
+                <br />
     
-        <br />
-        <br />
+                <asp:Label ID="Label1" runat="server" Text="Nhập ngày tháng năm ở ô dưới"></asp:Label>
+                &nbsp;hoặc click vào biểu tượng
+                <br />
+                <asp:TextBox ID="TextBox1" runat="server" Height="25px" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged" Width="168px"></asp:TextBox>
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="32px" ImageUrl="~/Image/DICH-VU-IN-HINH-LEN-LICH-DE-BAN_2013102213553903.jpg" OnClick="ImageButton1_Click1" style="margin-right: 0px" ToolTip="Click me" Width="103px"/>
+                &nbsp;<asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Full" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="213px" OnSelectionChanged="Calendar1_SelectionChanged" ShowGridLines="True" Width="268px" NextMonthText="&gt;" PrevMonthText="&lt;">
+                    <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
+                    <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
+                    <OtherMonthDayStyle ForeColor="#CC9966" />
+                    <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
+                    <SelectorStyle BackColor="#FFCC66" />
+                    <TitleStyle BackColor="#990000" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC" />
+                    <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
+                </asp:Calendar>
     
-        <asp:Label ID="Label1" runat="server" Text="Nhập ngày tháng năm ở ô dưới"></asp:Label>
-        &nbsp;hoặc click vào biểu tượng
-        <br />
-        <asp:TextBox ID="TextBox1" runat="server" Height="25px" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged" Width="168px"></asp:TextBox>
-        <asp:ImageButton ID="ImageButton1" runat="server" Height="32px" ImageUrl="~/Image/DICH-VU-IN-HINH-LEN-LICH-DE-BAN_2013102213553903.jpg" OnClick="ImageButton1_Click1" style="margin-right: 0px" ToolTip="Click me" Width="103px"/>
-        &nbsp;<asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="#FFCC66" BorderWidth="1px" DayNameFormat="Full" Font-Names="Verdana" Font-Size="8pt" ForeColor="#663399" Height="213px" OnSelectionChanged="Calendar1_SelectionChanged" ShowGridLines="True" Width="268px" NextMonthText="&gt;" PrevMonthText="&lt;">
-            <DayHeaderStyle BackColor="#FFCC66" Font-Bold="True" Height="1px" />
-            <NextPrevStyle Font-Size="9pt" ForeColor="#FFFFCC" />
-            <OtherMonthDayStyle ForeColor="#CC9966" />
-            <SelectedDayStyle BackColor="#CCCCFF" Font-Bold="True" />
-            <SelectorStyle BackColor="#FFCC66" />
-            <TitleStyle BackColor="#990000" Font-Bold="True" Font-Size="9pt" ForeColor="#FFFFCC" />
-            <TodayDayStyle BackColor="#FFCC66" ForeColor="White" />
-        </asp:Calendar>
+                <br />
+                <br />
+                <asp:Label ID="lblMess" runat="server" Font-Size="X-Large" ForeColor="Blue"></asp:Label>
     
-        <br />
-        <br />
-        <asp:Label ID="lblMess" runat="server" Font-Size="X-Large" ForeColor="Blue"></asp:Label>
-    
-        <br />
-        <br />
-    </div>
+                <br />
+                <br />
+   </div>
 
-
+        </div>
         <div id ="foot">
-            <table>
-                    <tr>
-                        <td id="foot">
-                        <p>Họ và Tên: Lê Hữu Phước</p>
-                        <p>MSSV: 1551010103</p>
-                        <p>Sinh viên trường đại học Mở TP.HCM</p>
-                        </td>
-                    </tr>
-            </table>
+             Họ và Tên: Lê Hữu Phước</br>
+             MSSV: 1551010103</br>
+             Sinh viên trường đại học Mở TP.HCM
         </div>
 
 

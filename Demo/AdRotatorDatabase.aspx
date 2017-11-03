@@ -6,15 +6,30 @@
 <head runat="server">
     <title>Storing Advertisements in a Database Table.</title>
     <style>
-        #foot{ 
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
+        #foot{  
+            color: aquamarine;
+            clear: both;
             background-color:rgb(31, 31, 82);
             text-align: center;
             font-size: 20px;
+            width: 100%;
+            padding: 15px;
+            font-weight: bold;
+            padding: 10px;
+            border-top: 2px solid #ffffff;
        }
+          #Content {
+            float: left;
+            background-color: aquamarine;
+            width: 100%;
+            min-height: 800px;
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-bottom: 5px;
+            margin-right: 0px;
+            border: 1px solid #ffffff;
+        }
+        
     </style>
 </head>
 <body bgcolor ="#9999FF">
@@ -39,7 +54,7 @@
             <StaticSelectedStyle BackColor="#507CD1" />
         </asp:Menu>
 
-    <div>
+    <div id="Content">
         <br />
         <br />
         <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" ForeColor="#0000CC" Text="Quảng cáo được lấy từ cơ sở dữ liệu"></asp:Label>
@@ -55,22 +70,16 @@
         <br />
         <asp:Label ID="Label2" runat="server" Font-Size="Large" ForeColor="Black">Link...</asp:Label>
         &nbsp;<asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
-        <br />
+        <br /> <br />
     </div>
 
 
 
 
         <div id ="foot">
-            <table>
-                    <tr>
-                        <td id="foot">
-                        <p>Họ và Tên: Lê Hữu Phước</p>
-                        <p>MSSV: 1551010103</p>
-                        <p>Sinh viên trường đại học Mở TP.HCM</p>
-                        </td>
-                    </tr>
-            </table>
+             Họ và Tên: Lê Hữu Phước</br>
+             MSSV: 1551010103</br>
+             Sinh viên trường đại học Mở TP.HCM
         </div>
 
     </form>

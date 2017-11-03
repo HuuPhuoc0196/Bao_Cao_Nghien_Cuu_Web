@@ -31,6 +31,7 @@ public partial class CelendarFromADatabase : System.Web.UI.Page
         txtHo.Text = "";
         txtTen.Text = "";
         txtNgaySinh.Text = "";
+        Label6.Text = "";
     }
     protected void btnCancel_Click(object sender, EventArgs e)
     {
@@ -48,7 +49,7 @@ public partial class CelendarFromADatabase : System.Web.UI.Page
             if (txtMa.Text != "") maNV = txtMa.Text;
             else
             {
-                Label6.Text = "Mã nhân viên không hơp lệ";
+                Label6.Text = "Mã nhân viên không hơp lệ!";
                 return;
             }
             if (txtNgaySinh.Text != "")
@@ -59,7 +60,7 @@ public partial class CelendarFromADatabase : System.Web.UI.Page
         }
         catch (Exception ex)
         {
-            Label6.Text = "Ngày thắng nhập vào không hơp lệ";
+            Label6.Text = "Ngày thắng nhập vào không hơp lệ!";
             return;
         }
 
