@@ -56,6 +56,25 @@
 
     <div id="Content">
     
+                        <br />
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#000099" Text="Click vào hình hoặc vào link để chuyển"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile.xml" Target ="_top" Height="200px" Width="300px" OnAdCreated="AdRotator1_AdCreated"/>
+                        <br />
+                        <br />
+                        <asp:Label ID="Label2" runat="server" Text="Link..."></asp:Label>
+                &nbsp;<asp:HyperLink ID="HyperLink1" runat="server">[HyperLink1]</asp:HyperLink>
+                        <br />
+        <br />
+                        <asp:Button ID="btnThongKe" runat="server" OnClick="btnThongKe_Click" Text="Thông Kê" Width="68px" />
+                        <br />
+        <br />
+        <asp:Label ID="lblMess" runat="server"></asp:Label>
+    
+                        <br />
+                        <br />
+    
     </div>
 
 
