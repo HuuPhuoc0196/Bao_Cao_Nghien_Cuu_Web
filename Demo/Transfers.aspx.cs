@@ -70,6 +70,6 @@ public partial class Transfers : System.Web.UI.Page
     }
     protected void btnThongKe_Click(object sender, EventArgs e)
     {
-        lblMess.Text = "Số lần bạn click Quảng Cáo là: " + ThongKe();
+        lblMess.Text = "Số lần Quảng Cáo hiện lên là: " + ThongKe();
     }
 }
