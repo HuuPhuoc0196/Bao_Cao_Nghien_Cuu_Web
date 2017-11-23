@@ -82,6 +82,9 @@
             
              <h3> Hình ảnh minh họa</h3>
              <p> 
+                 <asp:Image ID="Image6" runat="server" ImageUrl="~/Image/hinh6.PNG" />
+             </p>
+             <p> 
                  <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/hinh1.PNG" />
              </p>
              <p> 
@@ -93,6 +96,9 @@
              <p>
                  Bạn cũng có thể sử dụng kiểm soát Lịch để hiển thị sự kiện trong lịch. Trong phần này, 
                  xây dựng một ứng dụng lịch biểu đơn giản cho phép bạn chèn, cập nhật, và xóa lịch mục. Mỗi mục nhập lịch trình được đánh dấu trong một điều khiển lịch
+             </p>
+             <p>
+                 <asp:Image ID="Image7" runat="server" ImageUrl="~/Image/hinh7.PNG" />
              </p>
 
              <h2> <b> <font>III.	Displaying Advertisements </font></b></h2>
@@ -125,6 +131,12 @@
              <p> <b>  -	Target: </b>  cho phép bạn mở một cửa sổ mới khi người dùng nhấp vào biểu ngữ quảng cáo. </p>
              <h3> *  Một số sự kiện</h3>
              <p> <b>  -	AdCreated: </b> Sự kiện được gọi khi load Advertisements lên </p>
+             <p> 
+                 <asp:Image ID="Image9" runat="server" ImageUrl="~/Image/hinh9.PNG" />
+             </p>
+             <p> 
+                 <asp:Image ID="Image8" runat="server" ImageUrl="~/Image/hinh8.PNG" />
+             </p>
 
               <h2> <b> <font>IV.	Storing Advertisements in an XML File. </font></b></h2>
              <p>
@@ -150,6 +162,9 @@
                  điều khiển AdRotator bị ràng buộc bởi một kiểm soát SqlDataSource. 
                  Các SqlDataSource kiểm soát đại diện cho các nội dung của một cơ sở dữ liệu, nằm trong cơ sở dữ liệu SQL Express 
              </p>
+             <p>
+                 <asp:Image ID="Image10" runat="server" ImageUrl="~/Image/hinh12.PNG" />
+             </p>
 
               <h2> <b> <font>VI.	Tracking Impressions and Transfers.</font></b></h2>
              <p>
@@ -164,6 +179,8 @@
 
 
         </div>
+
+        <br />
 
         <div id ="foot">
              Họ và Tên: Lê Hữu Phước</br>
